@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT4Teacher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="fchoise.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="SanPham.css"/>
+    <link rel="stylesheet" href="foot.css"/>
+    <link rel="stylesheet" href="DoiMau.css">
+    <link rel="stylesheet" href="search.css"/>
+  </head>
+  <body>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <header class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <span class="logo-text">IT4Teacher</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+      <div class="header-right">
+
+        <input
+            type="text"
+            id="searchMember"
+            placeholder="🔍 Tìm sản phẩm...">
+
+        <button id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+      </div>
+      <button class="hamburger-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+    </aside>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="ThanhVien.html">THÀNH VIÊN</a></li>
+        <li><a href="TinTuc.html">TIN TỨC</a></li>
+        <li><a href="DangKy.html">ĐĂNG KÝ</a></li>
+      </ul>
+    </aside>
+    <section class="events-section">
+      <div class="events-header">
+        <h2 class="section-title">SỰ KẾT HỢP GIỮA TƯ DUY & CÔNG NGHỆ AI</h2>
+        <p class="section-desc">
+          Nơi những ý tưởng sáng tạo cá nhân được hiện thực hóa thông qua sức mạnh của Trí tuệ Nhân tạo (AI). Các dự án thể hiện sự giao thoa giữa tư duy định hình sản phẩm, thiết kế luồng hoạt động của con người và khả năng tối ưu lập trình đột phá từ AI
+        </p>
+      </div>
+      <div class="events-list">
+        <div class="event-row cream-bg">
+          <div class="event-text">
+            <h3 class="event-title">Saiyan Clash (Goku vs Vegeta)</h3>
+            <p class="event-content">
+              Thể loại: Đối kháng / Hành động Anime.Lối chơi: Điều khiển nhân vật di chuyển,
+               tích tụ năng lượng Ki và thi triển tuyệt kỹ (Kamehameha, Final Flash) đè bẹp đối thủ.
+               Kỹ thuật cốt lõi: Cơ chế Beam Struggle (hai luồng chưởng va chạm và đẩy nhau ở giữa màn hình); 
+               hiệu ứng Screen Shake (dịch chuyển tọa độ Canvas ngẫu nhiên) tạo cảm giác bùng nổ khi va chạm.
+            </p>
+          </div>
+          <div class="event-media">
+            <video loop autoplay muted controls>
+            <source src="doikhang.mp4" type="video/mp4">
+          </video>
+          </div>
+        </div>
+        <div class="event-row white-bg reverse">
+          <div class="event-text">
+            <h3 class="event-title">Cozy Kitchen</h3>
+            <p class="event-content">
+              Thể loại: Mô phỏng / Thư giãn (Casual).
+              Lối chơi: Chọn đúng chuỗi nguyên liệu để chế biến các món ăn (Ramen, Trà sữa, Pancake) 
+              phục vụ các vị khách động vật đáng yêu.
+              Kỹ thuật cốt lõi: Lối chơi tự do không tính giờ; phát nhạc nền Lo-Fi êm dịu tạo bằng 
+              Web Audio API (OscillatorNode); hệ thống hạt (Particle System) tạo hiệu ứng hơi nước bốc lên tự nhiên.
+            </p>
+          </div>
+          <div class="event-media">
+            <video loop autoplay muted controls>
+              <source src="nauan.mp4" type="video/mp4">
+          </video>
+          </div>
+        </div>
+        <div class="event-row cream-bg">
+          <div class="event-text">
+            <h3 class="event-title">Cyber Caro</h3>
+            <p class="event-content">
+              Thể loại: Trí tuệ / Chiến thuật (Gomoku 15x15).Lối chơi: Đánh cờ X/O nối đủ 5 quân liên tiếp theo chiều ngang, 
+              dọc hoặc chéo để giành chiến thắng trước Máy (AI) hoặc người chơi khác. Kỹ thuật cốt lõi: Dùng Canvas 2D vẽ lưới ma trận; thuật toán Heuristic tính 
+              điểm tối ưu giúp AI biết tự tấn công và chặn nước đi nguy hiểm; xử lý mảng 2 chiều kiểm tra điều kiện thắng 4 hướng.
+            </p>
+          </div>
+          <div class="event-media">
+            <video loop autoplay muted controls>
+              <source src="caroo.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col brand-col">
+            <div class="footer-logo">
+              <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+              <div class="logo-text">
+                <h2>Website câu lạc bộ Tin học</h2>
+                <p>Trường ĐH Tây Bắc</p>
+              </div>
+            </div>
+            <ul class="contact-list">
+              <li>IT4Teachers</li>
+              <li>0816 805 703</li>
+              <li>0819 282 145</li>
+              <li>Giàng Tuấn Anh</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Chuyên mục</h4>
+            <ul>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Hoạt động</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Tuyển thành viên</a></li>
+              <li><a href="#">Hỏi đáp</a></li>
+              <li><a href="#">Trang Chủ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Liên kế</h4>
+            <ul>
+              <li><a href="https://utb.edu.vn/">Trường Đại học Tây Bắc</a></li>
+              <li><a href="https://www.youtube.com/@IT4Teachers" target="_blank">YouTube</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61595303782713" target="_blank">Facebook</a></li>
+              <li><a href="https://github.com/anhgtk66sptin-coder" target="_blank">Github</a></li>
+              <li><a href="https://zalo.me/g/u2xyxccbri2n28fqqncn" target="_blank">Nhóm Zalo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col login-col">
+            <h4>Thành viên</h4>
+            <form class="login-form" action="#" method="POST">
+              <div class="input-box">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Tên đăng nhập" required />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Mật khẩu" required />
+              </div>
+              <div class="remember-box">
+                <label>
+                  <input type="checkbox" /> Ghi nhớ mật khẩu
+                </label>
+              </div>
+              <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
+              <div class="login-links">
+                <a href="#">Quên tên đăng nhập?</a>
+                <a href="#">Quên mật khẩu?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="share-menu">
+        <a href="https://www.facebook.com/profile.php?id=61595303782713"  target="_blank" class="share-item facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/@IT4Teachers"  target="_blank" class="share-item youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/?hl=en"  target="_blank" class="share-item instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://zalo.me/g/u2xyxccbri2n28fqqncn"  target="_blank" class="share-item zalo">
+            Z
+        </a>
+        <a href="https://github.com/"  target="_blank" class="share-item github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <button class="share-button" id="shareButton">
+            <i class="fa-solid fa-share-nodes"></i>
+        </button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="dieuhuong.js"></script>
+    <script src="footer.js"></script>
+    <script src="sanpham.js"></script>
+    <script src="DoiDaoDienVaTimKiemThanhVien.js"></script>
+  </body>
+</html>

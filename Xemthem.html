@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT4Teacher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="fchoise.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="foot.css"/>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="DoiMau.css">
+    <link rel="stylesheet" href="xemthem.css">
+  </head>
+  <body>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <header class="navbar">
+      <a href="TrangChu.html" class="nav-brand" id ="vtri">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <span class="logo-text">IT4Teacher</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+      <div class="header-right">
+        <input
+            type="text"
+            id="searchMember"
+            placeholder="🔍 Tìm Nội dung...">
+
+        <button id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+      </div>
+      <button class="hamburger-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+    </aside>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="ThanhVien.html">THÀNH VIÊN</a></li>
+        <li><a href="TinTuc.html">TIN TỨC</a></li>
+        <li><a href="DangKy.html">ĐĂNG KÝ</a></li>
+      </ul>
+    </aside>
+    <section class="banner">
+        <span class="tag">
+            <i class="fa-solid fa-users"></i>
+            TUYỂN THÀNH VIÊN 2026
+        </span>
+
+        <h1>Trở thành một phần của IT4Teacher</h1>
+
+        <p>
+            Cùng học hỏi công nghệ, phát triển kỹ năng lập trình,
+            sáng tạo sản phẩm và kết nối với những người có cùng đam mê.
+        </p>
+
+        <p class="date">
+            <i class="fa-regular fa-calendar"></i>
+            Thời gian đăng ký: 10/09/2026 - 24/09/2026
+        </p>
+    </section>
+
+    <main class="container">
+        <section class="intro">
+            <div>
+                <h2 class="section-title">01. Giới thiệu về CLB</h2>
+
+                <p>
+                    IT4Teacher là môi trường học tập và sáng tạo dành cho
+                    những bạn yêu thích Công nghệ Thông tin, lập trình
+                    và ứng dụng công nghệ trong giáo dục.
+                </p>
+
+                <p>
+                    Khi tham gia CLB, bạn có cơ hội làm việc nhóm,
+                    thực hành xây dựng website, tìm hiểu các công cụ số
+                    và phát triển kỹ năng phục vụ học tập, giảng dạy.
+                </p>
+
+                <p>
+                    Chúng mình tin rằng mỗi thành viên đều có thể
+                    đóng góp ý tưởng, học hỏi điều mới và cùng nhau
+                    tạo ra những sản phẩm hữu ích.
+                </p>
+            </div>
+
+            <img
+                src="xemthem.jpg"
+                alt="Các thành viên IT4Teacher học tập và làm việc nhóm">
+        </section>
+        <section>
+            <h2 class="section-title">02. Quyền lợi khi tham gia</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Nâng cao kỹ năng</h3>
+                    <p>
+                        Thực hành HTML, CSS, JavaScript và tiếp cận
+                        các công cụ công nghệ phục vụ học tập.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h3>Làm việc nhóm</h3>
+                    <p>
+                        Cùng các thành viên trao đổi ý tưởng,
+                        phối hợp thực hiện dự án và chia sẻ kiến thức.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Phát triển sáng tạo</h3>
+                    <p>
+                        Rèn luyện tư duy giải quyết vấn đề,
+                        xây dựng sản phẩm số và ứng dụng AI.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="requirements">
+            <h2 class="section-title">03. Đối tượng và yêu cầu</h2>
+
+            <p>
+                Chúng mình chào đón các bạn sinh viên có tinh thần
+                học hỏi, trách nhiệm và mong muốn phát triển bản thân.
+            </p>
+
+            <ul>
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Sinh viên ngành Công nghệ Thông tin, Sư phạm Tin học
+                    và các ngành có liên quan.
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Có niềm yêu thích với công nghệ, lập trình hoặc giáo dục.
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Chủ động học hỏi, tích cực tham gia hoạt động chung.
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Có tinh thần hợp tác, trách nhiệm với công việc được giao.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-title">04. Quy trình ứng tuyển</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <h3>Bước 1: Đăng ký</h3>
+                    <p>
+                        Điền thông tin cá nhân và chia sẻ
+                        nguyện vọng tham gia CLB.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <h3>Bước 2: Trao đổi</h3>
+                    <p>
+                        Tìm hiểu thêm về sở thích, kỹ năng
+                        và mong muốn của bạn.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <h3>Bước 3: Tham gia CLB</h3>
+                    <p>
+                        Nhận thông báo kết quả và bắt đầu
+                        tham gia các hoạt động phù hợp.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="apply" id="ung-tuyen">
+            <h2>Sẵn sàng gia nhập IT4Teacher?</h2>
+
+            <p>
+                Hãy cùng chúng mình học tập, sáng tạo
+                và phát triển trong môi trường công nghệ!
+            </p>
+
+            <a href="TuyenThanhVien.html" class="btn btn-white">
+                <i class="fa-solid fa-arrow-left"></i>
+                Quay lại tuyển thành viên
+            </a>
+
+            <a href="https://forms.gle/EobEHZ3daLaqxah69" class="btn btn-white" target="_blank">
+                <i class="fa-solid fa-paper-plane"></i>
+                ỨNG TUYỂN NGAY
+            </a>
+        </section>
+
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col brand-col">
+            <div class="footer-logo">
+              <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+              <div class="logo-text">
+                <h2>Website câu lạc bộ Tin học</h2>
+                <p>Trường ĐH Tây Bắc</p>
+              </div>
+            </div>
+            <ul class="contact-list">
+              <li>IT4Teachers</li>
+              <li>0816 805 703</li>
+              <li>0819 282 145</li>
+              <li>Giàng Tuấn Anh</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Chuyên mục</h4>
+            <ul>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Hoạt động</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Tuyển thành viên</a></li>
+              <li><a href="#">Hỏi đáp</a></li>
+              <li><a href="#">Trang Chủ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Liên kế</h4>
+            <ul>
+              <li><a href="https://utb.edu.vn/" target="_blank">Trường Đại học Tây Bắc</a></li>
+              <li><a href="https://www.youtube.com/@IT4Teachers" target="_blank">YouTube</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61595303782713" target="_blank">Facebook</a></li>
+              <li><a href="https://github.com/anhgtk66sptin-coder" target="_blank">Github</a></li>
+              <li><a href="https://zalo.me/g/u2xyxccbri2n28fqqncn" target="_blank">Nhóm Zalo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col login-col">
+            <h4>Thành viên</h4>
+            <form class="login-form" action="#" method="POST">
+              <div class="input-box">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Tên đăng nhập" required />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Mật khẩu" required />
+              </div>
+              <div class="remember-box">
+                <label>
+                  <input type="checkbox" /> Ghi nhớ mật khẩu
+                </label>
+              </div>
+              <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
+              <div class="login-links">
+                <a href="#">Quên tên đăng nhập?</a>
+                <a href="#">Quên mật khẩu?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="share-menu">
+        <a href="https://www.facebook.com/profile.php?id=61595303782713"  target="_blank" class="share-item facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/@IT4Teachers"  target="_blank" class="share-item youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/?hl=en"  target="_blank" class="share-item instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://zalo.me/g/u2xyxccbri2n28fqqncn"  target="_blank" class="share-item zalo">
+            Z
+        </a>
+        <a href="https://github.com/"  target="_blank" class="share-item github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <button class="share-button" id="shareButton">
+            <i class="fa-solid fa-share-nodes"></i>
+        </button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="dieuhuong.js"></script>
+    <script src="footer.js"></script>
+    <script src="searchtt.js"></script>
+    <script src="DoiDaoDienVaTimKiemThanhVien.js"></script>
+</body>
+</html>

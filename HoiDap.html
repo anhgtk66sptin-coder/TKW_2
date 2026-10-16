@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT4Teacher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="fchoise.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="HoiDap.css" />
+    <link rel="stylesheet" href="foot.css"/>
+    <link rel="stylesheet" href="DoiMau.css">
+    <link rel="stylesheet" href="search.css"/>
+  </head>
+  <body>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <header class="navbar">
+      <a href="1TrangChu.html" class="nav-brand">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <span class="logo-text">IT4Teacher</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+      <div class="header-right">
+
+        <input
+            type="text"
+            id="searchMember"
+            placeholder="🔍 Tìm nội dung...">
+
+        <button id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+      </div>
+      <button class="hamburger-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+    </aside>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="ThanhVien.html">THÀNH VIÊN</a></li>
+        <li><a href="TinTuc.html">TIN TỨC</a></li>
+        <li><a href="DangKy.html">ĐĂNG KÝ</a></li>
+      </ul>
+    </aside>
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="faq-header">
+          <h2 class="faq-title">HỎI ĐÁP</h2>
+          <div class="title-line"></div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-image-box">
+            <img src="anhnhom1.jpg" alt="hoidap" class="faq-image">
+          </div>
+          <div class="faq-accordion">
+            <div class="faq-item active">
+              <div class="faq-question">
+                <h3>Làm sao để trở thành thành viên của CLB Tin học HU?</h3>
+                <i class="fa-solid fa-chevron-up faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  CLB Tin học hiện có quy trình đăng ký thành viên trực tuyến thông qua form trên website. Bạn chỉ cần điền đầy đủ thông tin cá nhân, chọn vị trí/nhóm phù hợp và gửi đăng ký. Sau khi xác nhận, ban tổ chức sẽ liên hệ và hướng dẫn bạn tham gia các hoạt động của CLB.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>CLB Tin học có những hoạt động gì?</h3>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  CLB tổ chức đa dạng các hoạt động như workshop công nghệ, cuộc thi lập trình nội bộ, các dự án thực tế, các buổi sinh hoạt chuyên môn định kỳ và sự kiện teambuilding gắn kết.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Có cần biết lập trình mới tham gia được không?</h3>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Không bắt buộc. CLB hoan nghênh tất cả các bạn có niềm đam mê với công nghệ. Chúng mình có lộ trình training từ cơ bản đến nâng cao dành riêng cho thành viên mới.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>CLB có hỗ trợ gì cho các thành viên mới?</h3>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Thành viên mới sẽ được tham gia chuỗi buổi huấn luyện kỹ năng, có các anh chị mentor trực tiếp hướng dẫn và giải đáp thắc mắc trong suốt quá trình học tập.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Sinh viên từ các khoa khác có thể tham gia CLB không?</h3>
+                <i class="fa-solid fa-chevron-down faq-icon"></i>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Có. CLB luôn chào đón các bạn sinh viên đến từ mọi khoa/chuyên ngành có tinh thần học hỏi và mong muốn phát triển bản thân.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col brand-col">
+            <div class="footer-logo">
+              <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+              <div class="logo-text">
+                <h2>IT4Teacher</h2>
+                <p>Trường ĐH Tây Bắc</p>
+              </div>
+            </div>
+            <ul class="contact-list">
+              <li>IT4Teachers</li>
+              <li>0816 805 703</li>
+              <li>0819 282 145</li>
+              <li>Giàng Tuấn Anh</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Chuyên mục</h4>
+            <ul>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Hoạt động</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Tuyển thành viên</a></li>
+              <li><a href="#">Hỏi đáp</a></li>
+              <li><a href="#">Trang Chủ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Liên kế</h4>
+            <ul>
+              <li><a href="https://utb.edu.vn/">Trường Đại học Tây Bắc</a></li>
+              <li><a href="https://www.youtube.com/@IT4Teachers" target="_blank">YouTube</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61595303782713" target="_blank">Facebook</a></li>
+              <li><a href="https://github.com/anhgtk66sptin-coder" target="_blank">Github</a></li>
+              <li><a href="https://zalo.me/g/u2xyxccbri2n28fqqncn" target="_blank">Nhóm Zalo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col login-col">
+            <h4>Thành viên</h4>
+            <form class="login-form" action="#" method="POST">
+              <div class="input-box">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Tên đăng nhập" required />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Mật khẩu" required />
+              </div>
+              <div class="remember-box">
+                <label>
+                  <input type="checkbox" /> Ghi nhớ mật khẩu
+                </label>
+              </div>
+              <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
+              <div class="login-links">
+                <a href="#">Quên tên đăng nhập?</a>
+                <a href="#">Quên mật khẩu?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="share-menu">
+        <a href="https://www.facebook.com/profile.php?id=61595303782713"  target="_blank" class="share-item facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/@IT4Teachers"  target="_blank" class="share-item youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/?hl=en"  target="_blank" class="share-item instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://zalo.me/g/u2xyxccbri2n28fqqncn"  target="_blank" class="share-item zalo">
+            Z
+        </a>
+        <a href="https://github.com/"  target="_blank" class="share-item github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <button class="share-button" id="shareButton">
+            <i class="fa-solid fa-share-nodes"></i>
+        </button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="dieuhuong.js"></script>
+    <script src="hoidap.js"></script>
+    <script src="footer.js"></script>
+    <script src="DoiDaoDienVaTimKiemThanhVien.js"></script>
+  </body>
+</html>

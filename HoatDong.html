@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT4Teacher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="fchoise.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="HoatDong.css" />
+    <link rel="stylesheet" href="foot.css"/>
+    <link rel="stylesheet" href="DoiMau.css">
+    <link rel="stylesheet" href="search.css"/>
+  </head>
+  <body>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <header class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <span class="logo-text">IT4Teacher</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+      <div class="header-right">
+
+        <input
+            type="text"
+            id="searchMember"
+            placeholder="🔍 Tìm hoạt động...">
+
+        <button id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+      </div>
+      <button class="hamburger-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+    </aside>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="ThanhVien.html">THÀNH VIÊN</a></li>
+        <li><a href="TinTuc.html">TIN TỨC</a></li>
+        <li><a href="DangKy.html">ĐĂNG KÝ</a></li>
+      </ul>
+    </aside>
+    <section class="activities-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fa-solid fa-users"></i> HOẠT ĐỘNG CỦA THÀNH VIÊN
+          </h2>
+          <p class="section-subtitle">
+            Học hỏi – Thực hành – Kết nối – Phát triển
+          </p>
+        </div>
+        <div class="activity-grid">
+          <div class="activity-card">
+            <div class="card-image">
+              <img
+                src="HSG.jpg"
+                alt="Workshop công nghệ"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-content">
+                <h3 class="card-title">Thành Tựu Nổi Bật</h3>
+                <p class="card-text">
+                  Kết quả từ sự nỗ lực không ngừng nghỉ của bản thân, 
+                  cùng sự hướng dẫn tận tình từ thầy cô và sự đồng hành, cổ vũ từ bạn bè.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="card-image">
+              <img
+                src="htvpt.jpg"
+                alt="Cùng nhau phát triển"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-content">
+                <h3 class="card-title">Hợp Tác & Phát Triển</h3>
+                <p class="card-text">
+                  Chủ động thực hiện các dự án thực tế, tích cực chia sẻ ý 
+                  tưởng và phối hợp giải quyết bài toán khó để tạo ra các sản phẩm giá trị.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="card-image">
+              <img
+                src="HUEICT.jpg"
+                alt="Chinh phục thử thách"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-content">
+                <h3 class="card-title">Bứt Phá Giới Hạn</h3>
+                <p class="card-text">
+                  Thử sức tại sân chơi lập trình Hue-ICT Challenge nhằm giao lưu, 
+                  cọ xát kinh nghiệm và nâng cao tư duy thuật toán cùng các bạn trẻ tài năng.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="card-image">
+              <img
+                src="CHT.jpg"
+                alt="Chinh phục thử thách"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-content">
+                <h3 class="card-title">Bứt Phá Giới Hạn</h3>
+                <p class="card-text">
+                  Thành tích ghi nhận sự sáng tạo và nỗ lực trong nghiên cứu, 
+                  thực hiện mô hình dự thi, đạt Giải B tại Cuộc thi Sáng tạo Thanh thiếu niên, 
+                  Nhi đồng huyện Điện Biên Đông năm 2024.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="card-image">
+              <img
+                src="anhnhom1.jpg"
+                alt="Gắn kết thành viên"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-content">
+                <h3 class="card-title">Tinh Thần Đồng Đội</h3>
+                <p class="card-text">
+                  Sẵn sàng tương trợ và đồng hành cùng các thành viên qua các hoạt động ngoại khóa,
+                  xây dựng môi trường gắn kết và cùng nhau vượt qua thách thức.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col brand-col">
+            <div class="footer-logo">
+              <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+              <div class="logo-text">
+                <h2>Website câu lạc bộ Tin học</h2>
+                <p>Trường ĐH Tây Bắc</p>
+              </div>
+            </div>
+            <ul class="contact-list">
+              <li>IT4Teachers</li>
+              <li>0816 805 703</li>
+              <li>0819 282 145</li>
+              <li>Giàng Tuấn Anh</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Chuyên mục</h4>
+            <ul>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Hoạt động</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Tuyển thành viên</a></li>
+              <li><a href="#">Hỏi đáp</a></li>
+              <li><a href="#">Trang Chủ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Liên kế</h4>
+            <ul>
+              <li><a href="https://utb.edu.vn/">Trường Đại học Tây Bắc</a></li>
+              <li><a href="https://www.youtube.com/@IT4Teachers" target="_blank">YouTube</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61595303782713" target="_blank">Facebook</a></li>
+              <li><a href="https://github.com/anhgtk66sptin-coder" target="_blank">Github</a></li>
+              <li><a href="https://zalo.me/g/u2xyxccbri2n28fqqncn" target="_blank">Nhóm Zalo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col login-col">
+            <h4>Thành viên</h4>
+            <form class="login-form" action="#" method="POST">
+              <div class="input-box">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Tên đăng nhập" required />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Mật khẩu" required />
+              </div>
+              <div class="remember-box">
+                <label>
+                  <input type="checkbox" /> Ghi nhớ mật khẩu
+                </label>
+              </div>
+              <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
+              <div class="login-links">
+                <a href="#">Quên tên đăng nhập?</a>
+                <a href="#">Quên mật khẩu?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="share-menu">
+        <a href="https://www.facebook.com/profile.php?id=61595303782713"  target="_blank" class="share-item facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/@IT4Teachers"  target="_blank" class="share-item youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/?hl=en"  target="_blank" class="share-item instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://zalo.me/g/u2xyxccbri2n28fqqncn"  target="_blank" class="share-item zalo">
+            Z
+        </a>
+        <a href="https://github.com/"  target="_blank" class="share-item github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <button class="share-button" id="shareButton">
+            <i class="fa-solid fa-share-nodes"></i>
+        </button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="dieuhuong.js"></script>
+    <script src="footer.js"></script>
+    <script src="hoatdong.js"></script>
+    <script src="DoiDaoDienVaTimKiemThanhVien.js"></script>
+  </body>
+</html>
