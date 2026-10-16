@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT4Teacher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="fchoise.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="GioiThieu.css" />
+    <link rel="stylesheet" href="foot.css"/>
+    <link rel="stylesheet" href="search.css"/>
+    <link rel="stylesheet" href="DoiMau.css">
+  </head>
+  <body>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <header class="navbar">
+      <a href="#" class="nav-brand" id="vtri">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img">
+        <span class="logo-text">IT4Teacher</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+      <div class="header-right">
+
+        <input
+            type="text"
+            id="searchMember"
+            placeholder="🔍 Tìm thành viên...">
+
+        <button id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+      </div>
+      <button class="hamburger-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="SanPham.html">SẢN PHẨM</a></li>
+        <li><a href="TuyenThanhVien.html">TUYỂN THÀNH VIÊN</a></li>
+        <li><a href="HoiDap.html">HỎI ĐÁP</a></li>
+      </ul>
+    </aside>
+    <aside class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+        <button class="close-btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+        <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+        <li><a href="HoatDong.html">HOẠT ĐỘNG</a></li>
+        <li><a href="ThanhVien.html">THÀNH VIÊN</a></li>
+        <li><a href="TinTuc.html">TIN TỨC</a></li>
+        <li><a href="DangKy.html">ĐĂNG KÝ</a></li>
+      </ul>
+    </aside>
+    <section class="members-section">
+      <div class="container">
+        <div class="member-card">
+          <div class="member-image-box">
+            <div class="blob-bg"></div>
+            <span class="decor star">★</span>
+            <span class="decor circle-blue"></span>
+            <span class="decor circle-cyan"></span>
+            <span class="decor circle-pink"></span>
+            <span class="decor triangle">▲</span>
+            <span class="decor yellow-dot"></span>
+            <img
+              src="anhgtt.jpg"
+              alt="Chế Đình Sơn"
+              class="member-img"
+            />
+          </div>
+          <div class="member-info">
+            <span class="member-prefix">Sinh Viên</span>
+            <h2 class="member-name">Giàng Tuấn Anh</h2>
+            <p class="member-role">Chủ nhiệm CLB</p>
+            <p class="member-desc">
+              Là người chịu trách nhiệm điều hành và định hướng phát triển của Câu lạc bộ Tin học. 
+              Với tinh thần trách nhiệm cao và niềm đam mê công nghệ, Tuấn Anh luôn nỗ lực xây dựng
+              môi trường học tập năng động, sáng tạo và gắn kết. Bên cạnh việc lập kế hoạch, tổ chức
+              các hoạt động chuyên môn và sự kiện, anh còn luôn sẵn sàng lắng nghe, hỗ trợ và truyền 
+              cảm hứng để các thành viên phát huy tối đa khả năng của mình.
+            </p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-image-box">
+            <div class="blob-bg"></div>
+            <span class="decor star">★</span>
+            <span class="decor circle-blue"></span>
+            <span class="decor circle-cyan"></span>
+            <span class="decor circle-pink"></span>
+            <span class="decor triangle">▲</span>
+            <span class="decor yellow-dot"></span>
+            <img
+              src="ttttt.jpg"
+              alt="Thành viên 2"
+              class="member-img"
+            />
+          </div>
+          <div class="member-info">
+            <span class="member-prefix">Sinh Viên</span>
+            <h2 class="member-name">Tòng Thị Thanh Thúy</h2>
+            <p class="member-role">Phó chủ nhiệm – Ban chuyên môn</p>
+            <p class="member-desc">
+              Là cánh tay đắc lực của Ban Chủ nhiệm trong công tác quản lý và tổ chức hoạt động 
+              của câu lạc bộ. Với khả năng làm việc nhóm, tinh thần trách nhiệm và sự nhiệt huyết, 
+              Thanh Thúy luôn đảm bảo các chương trình được triển khai hiệu quả, đồng thời tạo cầu 
+              nối giữa Ban Chủ nhiệm và các thành viên, góp phần xây dựng một môi trường học tập thân
+              thiện và chuyên nghiệp.
+            </p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-image-box">
+            <div class="blob-bg"></div>
+            <span class="decor star">★</span>
+            <span class="decor circle-blue"></span>
+            <span class="decor circle-cyan"></span>
+            <span class="decor circle-pink"></span>
+            <span class="decor triangle">▲</span>
+            <span class="decor yellow-dot"></span>
+            <img
+              src="chtt.jpg"
+              alt="Thành viên 3"
+              class="member-img"
+            />
+          </div>
+          <div class="member-info">
+            <span class="member-prefix">Sinh Viên</span>
+            <h2 class="member-name">Cầm Huy Tường</h2>
+            <p class="member-role">Ban Kỹ thuật</p>
+            <p class="member-desc">
+              Đam mê lập trình và nghiên cứu các công nghệ mới, 
+              Huy Tường phụ trách xây dựng nội dung đào tạo, 
+              tổ chức workshop và hướng dẫn thành viên thực hiện các dự án thực tế. 
+              Anh luôn mong muốn chia sẻ kiến thức, giúp các bạn sinh viên nâng cao kỹ 
+              năng chuyên môn và tự tin áp dụng những gì đã học vào các sản phẩm công nghệ.
+            </p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-image-box">
+            <div class="blob-bg"></div>
+            <span class="decor star">★</span>
+            <span class="decor circle-blue"></span>
+            <span class="decor circle-cyan"></span>
+            <span class="decor circle-pink"></span>
+            <span class="decor triangle">▲</span>
+            <span class="decor yellow-dot"></span>
+            <img
+              src="habv.jpg"
+              alt="Thành viên 4"
+              class="member-img"
+            />
+          </div>
+          <div class="member-info">
+            <span class="member-prefix">Sinh Viên</span>
+            <h2 class="member-name">Bùi Việt Hà</h2>
+            <p class="member-role">Ban Truyền thông</p>
+            <p class="member-desc">
+              Chịu trách nhiệm xây dựng hình ảnh và quảng bá các hoạt động của 
+              câu lạc bộ đến sinh viên và cộng đồng. Với khả năng sáng tạo nội dung,
+              thiết kế đồ họa và quản lý mạng xã hội, Việt Hà luôn mang đến những sản 
+              phẩm truyền thông chuyên nghiệp, góp phần lan tỏa tinh thần học tập và những
+              giá trị tích cực mà CLB hướng đến.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col brand-col">
+            <div class="footer-logo">
+              <img src="fchoise.jpg" alt="Logo" class="logo-img" />
+              <div class="logo-text">
+                <h2>Website câu lạc bộ Tin học</h2>
+                <p>Trường ĐH Tây Bắc</p>
+              </div>
+            </div>
+            <ul class="contact-list">
+              <li>IT4Teachers</li>
+              <li>0816 805 703</li>
+              <li>0819 282 145</li>
+              <li>Giàng Tuấn Anh</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Chuyên mục</h4>
+            <ul>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Hoạt động</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Tuyển thành viên</a></li>
+              <li><a href="#">Hỏi đáp</a></li>
+              <li><a href="#">Trang Chủ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Liên kế</h4>
+            <ul>
+              <li><a href="https://utb.edu.vn/">Trường Đại học Tây Bắc</a></li>
+              <li><a href="https://www.youtube.com/@IT4Teachers" target="_blank">YouTube</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61595303782713" target="_blank">Facebook</a></li>
+              <li><a href="https://github.com/anhgtk66sptin-coder" target="_blank">Github</a></li>
+              <li><a href="https://zalo.me/g/u2xyxccbri2n28fqqncn" target="_blank">Nhóm Zalo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col login-col">
+            <h4>Thành viên</h4>
+            <form class="login-form" action="#" method="POST">
+              <div class="input-box">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Tên đăng nhập" required />
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Mật khẩu" required />
+              </div>
+              <div class="remember-box">
+                <label>
+                  <input type="checkbox" /> Ghi nhớ mật khẩu
+                </label>
+              </div>
+              <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
+              <div class="login-links">
+                <a href="#">Quên tên đăng nhập?</a>
+                <a href="#">Quên mật khẩu?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="share-menu">
+        <a href="https://www.facebook.com/profile.php?id=61595303782713"  target="_blank" class="share-item facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/@IT4Teachers"  target="_blank" class="share-item youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/?hl=en"  target="_blank" class="share-item instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://zalo.me/g/u2xyxccbri2n28fqqncn"  target="_blank" class="share-item zalo">
+            Z
+        </a>
+        <a href="https://github.com/"  target="_blank" class="share-item github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <button class="share-button" id="shareButton">
+            <i class="fa-solid fa-share-nodes"></i>
+        </button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="dieuhuong.js"></script>
+    <script src="footer.js"></script>
+    <script src="search.js"></script>
+    <script src="gioithieu.js"></script>
+    <script src="DoiDaoDienVaTimKiemThanhVien.js"></script>
+  </body>
+</html>
