@@ -1,0 +1,45 @@
+#themeToggle {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    background: white;
+    color: #ff4f9a;
+    margin-left: 0;
+    margin-right: auto;
+}
+body.dark{
+
+    background:#fff9f6;
+    color:white;
+
+}
+
+body.dark header{
+
+    background:rgb(157, 155, 168);
+
+}
+
+body.dark .member-card{
+
+    background:rgb(215, 215, 245);
+    color:white;
+
+}
+
+body.dark #searchMember{
+
+    background:#0F172A;
+    color:white;
+
+}
+
+body.dark #themeToggle{
+
+    background:ghostwhite;
+    color:#FFD700;
+
+}
