@@ -42,4 +42,22 @@ Website IT4Teacher góp phần quảng bá hình ảnh Câu lạc bộ Tin học
 
 Trong tương lai, nhóm định hướng tiếp tục hoàn thiện giao diện, cập nhật thường xuyên các hoạt động và sản phẩm mới, phát triển chức năng đăng ký thành viên trực tuyến, kết nối với cơ sở dữ liệu để quản lý thông tin và xây dựng hệ thống quản trị nội dung thuận tiện hơn.
 
-Với đề tài này, nhóm mong muốn tạo ra một website vừa có giá trị giới thiệu, quảng bá câu lạc bộ, vừa góp phần thúc đẩy tinh thần học tập, sáng tạo và ứng dụng công nghệ thông tin trong sinh viên.
+With đề tài này, nhóm mong muốn tạo ra một website vừa có giá trị giới thiệu, quảng bá câu lạc bộ, vừa góp phần thúc đẩy tinh thần học tập, sáng tạo và ứng dụng công nghệ thông tin trong sinh viên.
+
+---
+
+# 2. SẢN PHẨM BÀN GIAO VÀ CÁC LIÊN KẾT DỰ ÁN
+
+## 2.1. Danh sách sản phẩm cần nộp
+
+Dự án bao gồm đầy đủ các sản phẩm bàn giao sau:
+1. **Mã nguồn website (Source Code):** Toàn bộ các tệp HTML, CSS, JavaScript, hình ảnh và tài nguyên liên quan được tổ chức cấu trúc rõ ràng.
+2. **Tài liệu hướng dẫn & Báo cáo (README.md):** Tệp mô tả ý tưởng, mục tiêu, chức năng, hướng dẫn vận hành và thông tin liên kết dự án.
+3. **Website demo trực tuyến:** Trang web đã được xuất bản công khai qua dịch vụ GitHub Pages.
+4. **Video demo sản phẩm:** Video thuyết minh và minh họa các chức năng, giao diện của website.
+
+## 2.2. Các liên kết chính (Project Links)
+
+- **Mã nguồn trên GitHub (GitHub Repository):** [https://github.com/anhgtk66sptin-coder/TKW_2](https://github.com/anhgtk66sptin-coder/TKW_2)
+- **Trang web trực tuyến (GitHub Pages):** [https://anhgtk66sptin-coder.github.io/TKW_2/](https://anhgtk66sptin-coder.github.io/TKW_2/)
+- **Video giới thiệu & demo sản phẩm (YouTube):** [https://youtu.be/wGlqqQi926I](https://youtu.be/wGlqqQi926I)
